@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/jpg" href="./img/icon.jpg" />
+    <title>Clemente Delduca Portfolio</title>
+  </head>
+
+  <body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <a href="#inicio"><h1>PORTFOLIO</h1></a>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">HABILIDADES</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PROYECTOS</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="redes">
+              <a href="https://www.linkedin.com/in/clemente-delduca-6691181a7/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/ClementeDelduca" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Hola! un gusto</p>
+          <h2>Soy <span>Clemente Delduca</span>, System Engineer & Full Stack Web Developer</h2>
+          <p class="descripcion">Queres saber mas sobre mi?</p>
+          <a href="#sobremi">Ir a sobre mi</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/foto.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, Soy <span>Clemente Delduca</span></h2>
+        <h3>Ingeniero de Sistemas y Desarrollador Web Full Stack</h3>
+        <p>
+          Tengo un enfoque en la mejora de mis habilidades y conocimientos, 
+          que me han permitido desarrollar habilidades para trabajar de
+          manera efectiva en equipo y superar desafíos con determinación.
+        </p>
+        <p>
+          Estoy comprometido con el crecimiento constante y listo para enfrentar
+          nuevos retos en el desarrollo web. He liderado proyectos de desarrollo,
+          demuestro mis habilidades al llevar a cabo proyectos personales que me desafían
+          y me permiten aplicar lo que he aprendido en situaciones prácticas.
+        </p>
+        <p>Te invito a que veas mi Curriculum</p>
+        <a href="./img/cv.pdf" target="_blank">Descargar CV</a>
+      </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">HABILIDADES TÉCNICAS</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"> <i class="fa-solid fa-code"></i></span>
+          <h4>Back end</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>NodeJs - Sequelize - Express - Testing</li>
+          </ul>
+        </div>
+        <div class="servicio">
+          <span class="icono"
+            ><i class="fa fa-desktop" aria-hidden="true"></i
+          ></span>
+          <h4>Front end</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>
+              Html5 - Css - Ajax - React Js - React Native - Redux - Hooks -
+              Typescript - Javascript
+            </li>
+          </ul>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-database"></i></span>
+          <h4>Base de datos</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>- PostgreSQL - </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION L E N G U A J E S -->
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="img/icons8-github.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-javascript (1).svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-typescript.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-redux.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-reaccionar.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-postgresql.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-node-js.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-css3.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-html-5.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-oreja.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-tailwindcss.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-mongodb.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./img/docker-svgrepo-com.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./img/express-svgrepo-com.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-git.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/icons8-gitlab.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo">Mis Proyectos</h3>
+      <div class="container-card">
+        <div class="card">
+          <figure>
+            <img src="img/proyecto2.jpg" />
+          </figure>
+          <div class="contenido-card">
+            <h3>Countries</h3>
+            <p>
+              Proyecto individual, Muestar la banderas de los países y poder crear una actividad 
+              para asociarla a cualquier país deseado. En este proyecto se utilizo
+              React, Redux, NodeJs, Express, Sequelize y SQL
+            </p>
+            <a href="https://deploycountry.vercel.app/" target="_blank">VIEW</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="img/proyecto3.jpg" />
+          </figure>
+          <div class="contenido-card">
+            <h3>Servicios de Taller</h3>
+            <p>
+              Proyecto Final con 4 compañeros, el cual consiste en la administracion de los turnos 
+              disponibles para el servicio en un taller mecanico. Incluye: autenticacion de usuario,
+              carrito de compras, pasarela de pago y otras muchas funciones. En este proyecto
+              se utilizaron leguajes como React, Redux, Css, Express entre otros.
+            </p>
+            <a href="https://mechserv.vercel.app/" target="_blank">VIEW</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="img/ta te ti.jpg" />
+          </figure>
+          <div class="contenido-card">
+            <h3>Juego tres en línea</h3>
+            <p>
+              Mini proyecto de la creacion del juego tres en línea utilizando,
+              Javascript, React y Css
+            </p>
+            <a href="https://tres-en-linea-omega.vercel.app/" target="_blank">VIEW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--WHATSAPP-->
+    <div>
+      <a
+        href="https://api.whatsapp.com/send?phone=584265161377"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i size="{28}" color="#fff" class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+    <!-- SECCION FOOTER -->
+    <section>
+      <footer>
+        <div class="footer-content">
+          <h3>Contactarme</h3>
+          <p>Te invito a que conectemos y si queres comunicate conmigo</p>
+          <ul class="socials">
+            <li>
+              <a href="https://github.com/ClementeDelduca" target="_blank"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/clemente-delduca-6691181a7/" target="_blank"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+            </li>
+          </ul>
+          <a class="contactmail" href="mailto:clemente.delduca@gmail"
+            >clemente.delduca@gmail.com</a
+          >
+          <p>(+58) 426 5161377</p>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            copyright &copy;2023 Portfolio. by <span>Clemente Delduca</span>
+          </p>
+        </div>
+      </footer>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
